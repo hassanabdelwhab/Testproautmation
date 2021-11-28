@@ -1,0 +1,33 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[adminTest.NewTest.mainmethoed]
+################################################################################################################################################
+[ReportManager] File Action [GetAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @27-11-2021 00:31:36.0882 AM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @27-11-2021 00:31:36.0934 AM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @27-11-2021 00:31:36.0942 AM
+[ReportManager] Successfully Opened Google Chrome. @27-11-2021 00:31:38.0975 AM
+[ReportManager] Target URL: [https://opensource-demo.orangehrmlive.com/] @27-11-2021 00:31:38.0990 AM
+[ReportManager] Initial URL: [data:,] @27-11-2021 00:31:39.0026 AM
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211127-003135", Target File: "\1637965901999_mainmethoed.gif"]. @27-11-2021 00:31:42.0307 AM
+[ReportManager] Browser Action [NavigateToURL] successfully performed. With the following test data [https://opensource-demo.orangehrmlive.com/]. @27-11-2021 00:31:42.0655 AM
+[ReportManager] Element Action [TypeAppend] successfully performed. With the following test data [Admin]. @27-11-2021 00:31:43.0084 AM
+[ReportManager] Element Action [TypeAppend] successfully performed. With the following test data [admin123]. @27-11-2021 00:31:43.0508 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [LOGIN]. @27-11-2021 00:31:47.0122 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Admin]. @27-11-2021 00:31:48.0972 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [User Management]. @27-11-2021 00:31:59.0151 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Users]. @27-11-2021 00:32:00.0509 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Add]. @27-11-2021 00:32:01.0727 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [Hassan Mohammed Abdelwhab]. @27-11-2021 00:32:02.0271 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [Hassan2]. @27-11-2021 00:32:02.0745 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [OrangeHrm@123]. @27-11-2021 00:32:03.0287 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [OrangeHrm@123]. @27-11-2021 00:32:04.0297 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Save]. @27-11-2021 00:32:06.0225 AM
+[ReportManager] Element Action [Type] successfully performed. With the following test data [Hassan2]. @27-11-2021 00:32:06.0655 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Search]. @27-11-2021 00:32:07.0841 AM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Hassan2]. @27-11-2021 00:32:08.0938 AM
+[ReportManager] Element Action [GetText] successfully performed. With the following test data [Hassan2]. @27-11-2021 00:32:09.0370 AM
+[ReportManager] Loaded Shared OpenCV @27-11-2021 00:32:11.0822 AM
+[ReportManager] Assertion [ValidateElementAttribute] PASSED. Expected [Value Should be 'Hassan2' for the 'text' attribute, element locator 'By.id: systemUser_userName'] and Actual [Hassan2]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @27-11-2021 00:32:12.0201 AM
+[ReportManager] Successfully created attachment [Screenshot - 1637965929541_mainmethoed_ValidateElementAttribute_passed] @27-11-2021 00:32:12.0218 AM
+[ReportManager] Successfully created attachment [Animated Gif - mainmethoed] @27-11-2021 00:32:12.0227 AM

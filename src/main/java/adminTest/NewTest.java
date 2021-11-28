@@ -17,39 +17,27 @@ public class NewTest {
   public void mainmethoed() {
 	  WebDriver driver = BrowserFactory.getBrowser();                                  //Get Browser
 	  
-	  BrowserActions.navigateToURL(driver,"http://automationpractice.com/index.php?"); //Open website
-	  ElementActions.click(driver, By.partialLinkText("Sign in"));                     // click at sign in
-	  waitForLazyLoading();
-	  ElementActions.type(driver, By.id("email_create"), "automationtest66@fb2e.site");  // Type email
-	  ElementActions.click(driver, By.xpath("//*[@id=\"SubmitCreate\"]/span"));         //Click at Create account 
-	  waitForLazyLoading();
-	  ElementActions.click(driver, By.id("uniform-id_gender1"));                        // select a Title
-	  ElementActions.type(driver, By.id("customer_firstname"), "Hassan");               // Enter First Name
-	  ElementActions.type(driver, By.id("customer_lastname"), "Abdelwhab");             // Enter Last Name
-	  ElementActions.type(driver, By.id("passwd"), "Selenium@123");                       // Enter Password
-	  ElementActions.type(driver, By.id("company"), "Obeikan"); 	                    // Enter Company
-	  ElementActions.type(driver, By.id("address1"), "15th st");                        // Enter Address
-	  ElementActions.type(driver, By.id("city"), "Tuscaloosa");                         // Enter city
-	  waitForLazyLoading();
-	  ElementActions.click(driver, By.xpath("//div[@class='selector'][@id='uniform-id_state']"));  // click State 
-	  waitForLazyLoading();
-	  ElementActions.click(driver, By.xpath("//option[contains(.,'Alaska')]"));          //select Alaska city
-	  ElementActions.typeAppend(driver, By.id("postcode"), "99501");                    //Enter Post code
-	  ElementActions.type(driver, By.id("phone_mobile"), "01004208223");                //Enter Phone number
-	  ElementActions.click(driver, By.xpath("//*[@id=\"submitAccount\"]"));             // Click Register
-	  
-	  
-	  Assertions.assertEquals("Welcome to your account. Here you can manage all of your personal information and orders.", ElementActions.getText(driver, By.xpath("//p[@class='info-account']")));
-	  Assertions.assertElementAttribute(driver, By.xpath("//p[@class='info-account']"), ElementAttributeType.TEXT, "Welcome to your account. Here you can manage all of your personal information and orders.");
+	  BrowserActions.navigateToURL(driver, "https://opensource-demo.orangehrmlive.com/");//Open website
+	  ElementActions.typeAppend(driver, By.id("txtUsername"), "Admin");                 // Enter user name 
+	  ElementActions.typeAppend(driver, By.id("txtPassword"), "admin123");              // Enter pass word
+	  ElementActions.click(driver, By.id("btnLogin"));                                  // Click at login
+	  ElementActions.click(driver, By.xpath("//b[contains(.,'Admin')]"));               //click at admin
+	  ElementActions.click(driver, By.id("menu_admin_UserManagement"));                 // click at UserManagement
+	  ElementActions.click(driver,By.id("menu_admin_viewSystemUsers"));                 // click at users
+	  ElementActions.click(driver, By.id("btnAdd"));                                    //click At add
+	  ElementActions.type(driver,By.id("systemUser_employeeName_empName"), "Hassan Mohammed Abdelwhab");   //Enter Employee Name
+	  ElementActions.type(driver,By.id("systemUser_userName"), "Hassan2");				//Enter user name
+	  ElementActions.type(driver, By.id("systemUser_password"), "OrangeHrm@123");			// Enter Pass
+	  ElementActions.type(driver, By.id("systemUser_confirmPassword"), "OrangeHrm@123");   //Enter confirm pass
+	  ElementActions.click(driver, By.id("btnSave")); 									//click at save 	
+	  ElementActions.type(driver, By.id("searchSystemUser_userName"), "Hassan2");        //search by name 
+	  ElementActions.click(driver, By.id("searchBtn"));  								// click at search 
+	  ElementActions.click(driver, By.xpath("//a[contains(.,'Hassan2')]")); 			//open searh result 
+	  Assertions.assertElementAttribute(driver, By.id("systemUser_userName"), ElementAttributeType.TEXT,"Hassan2"); //check name as enter or not  
 	  
 	  
 
   }
-
-private void waitForLazyLoading() {
-	// TODO Auto-generated method stub
-	
-}
 
 	
 }

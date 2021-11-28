@@ -1,3 +1,0 @@
-[2021-11-07T00:38:05+0200] [FINE] http://automationpractice.com/index.php?controller=authentication&back=my-account - [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
-[2021-11-07T00:38:08+0200] [FINE] http://automationpractice.com/index.php?controller=authentication&back=my-account - [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
-[2021-11-07T00:38:08+0200] [FINE] http://automationpractice.com/index.php?controller=authentication&back=my-account - [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
